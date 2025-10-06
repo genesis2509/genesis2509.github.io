@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>The Coffee Spot</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        body {
+            background-color: #f5f0ff;
+            font-family: Arial, sans-serif;
+            color: #4b007d;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 16px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #d1b3ff;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .boton {
+            background-color: #8a2be2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #4b007d;
+            color: white;
+            font-size: 14px;
+        }
+        .media {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .media img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="background-color: #d2b48c; padding: 15px; width: fit-content; margin-left: 20px; border: 2px solid #a0522d; border-radius: 8px; text-align: center;">
+        <a href="cafe.html" target="_parent">Inicio</a> |
+        <a href="mailto:genesisanahi252009@gmail.com?subject=Asunto&body=Mensaje%20de%20prueba">Contacto</a>
+    </nav>
+
+    <h1>The Coffee Place</h1>
+
+    <div class="media">
+        <audio controls>
+            <source src="jazz.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="media">
+        <img src="logo.jpg" alt="Imagen de la cafetería">
+    </div>
+
+    <p>
+        Bienvenido a Coffee Place, un lugar simple y acogedor para disfrutar de una buena taza de café. Consulta nuestros precios a continuación y déjanos tus comentarios si deseas compartir algo con nosotros.
+    </p>
+
+    <table>
+        <caption><strong>Lista de Cafés y Precios</strong></caption>
+        <tr><th>Nombre del Café</th><th>Precio</th></tr>
+        <tr><td>Espresso</td><td>$2.00</td></tr>
+        <tr><td>Doble Espresso</td><td>$3.00</td></tr>
+        <tr><td>Americano</td><td>$2.50</td></tr>
+        <tr><td>Ristretto</td><td>$2.20</td></tr>
+        <tr><td>Macchiato</td><td>$2.80</td></tr>
+        <tr><td>Cortado</td><td>$2.90</td></tr>
+        <tr><td>Cappuccino</td><td>$3.50</td></tr>
+        <tr><td>Latte</td><td>$3.80</td></tr>
+        <tr><td>Mocaccino</td><td>$4.00</td></tr>
+        <tr><td>Frappe</td><td>$4.20</td></tr>
+        <tr><td>Frappuccino</td><td>$4.50</td></tr>
+    </table>
+
+    <div class="media">
+        <video width="800" height="450" controls>
+            <source src="the coffee spot.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Formulario funcional con enviar y borrar -->
+    <form action="about.html" method="get">
+        <table>
+            <caption><strong>Deja tu comentario</strong></caption>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre" placeholder="Tu nombre..." maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Apellido</td>
+                <td><input type="text" name="apellido" placeholder="Tu apellido..." maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Comentario</td>
+                <td><textarea name="comentario" rows="4" placeholder="Escribe tu comentario aquí..."></textarea></td>
+            </tr>
+            <tr height="50">
+                <td>Pulse aquí</td>
+                <td align="center">
+                    <a href="about.html" style="padding:10px 20px; background-color:#8840e6;
+                     color:white; text-decoration:none; border-radius:4px; font-family:Arial,sans-serif; 
+                     font-weight:bold; display:inline-block;">Enviar los datos</a>
+                    <input type="reset" value="Borrar" style="margin-left:10px; padding:10px 20px; background-color:#a661e3; 
+                        color:white; border:none; border-radius:4px; font-family:Arial,sans-serif; font-weight:bold; cursor:pointer;">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        © 2025 Coffee Place. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
